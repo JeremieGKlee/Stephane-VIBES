@@ -110,6 +110,9 @@ header{
     height:6em;
     background-color: yellow;
 }
+h1{
+    display:none;
+}
 .retour{
     flex:1;
 }
