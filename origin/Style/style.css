@@ -1,0 +1,303 @@
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: white;
+        width: 100%;
+        margin: auto;
+    }
+    header {
+        border-bottom: black 2px solid;
+        display: flex;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+    .retour {
+        padding: 0;
+        padding-top: 1em;
+        flex: 1;
+    }
+    #img_logo_rio2016 {
+        height: 80px;
+    }
+    nav {
+        flex: 4;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding-top: 3em;
+        margin: 0 1em;
+    }
+    .section1 {
+        display: flex;
+        align-items: flex-end;
+        height: 20vw;
+        background-image: url("../Photo/plagederio.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img_plage_lien {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 30px;
+        width: 100%;
+    }
+    span {
+        padding-left: 0.5em;
+        padding-top: 0.5em;
+        color: white;
+    }
+    .lien_art {
+        padding-top: 0.5em;
+        background-color: red;
+        color: white;
+        margin-right: 1em;
+    }
+    /* Plage de rio avec façon background */
+    
+    /* figure {
+        display: flex;
+        flex-flow: column;
+        max-width: 100%;
+        margin: auto;
+    }
+    #img_plage_rio {
+        max-height: 20vw;
+    }
+    #fig_a{
+        height:2em;
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    figcaption {
+        padding-left: 1em;
+        padding-top: 0.6em;
+        color: #fff;
+        font: italic smaller sans-serif;
+    }
+    figure a{
+        padding-top: 0.3em;
+        margin-right: 1em;
+        background-color: red;
+        color: white;
+    } */
+     /* Plage de rio avec façon figure et figcaption */
+     .section2 {
+        display: flex;
+        margin-top: 20px;
+        border-bottom: black 2px solid;
+    }
+    .titre_h1_img {
+        flex: 7;
+        display: flex;
+        text-align: center;
+    }
+    .img_point_dint {
+        height: 40px;
+        margin-right: 1em;
+    }
+    h1 {
+        color: black;
+    }
+    article {
+        padding-right: 1em;
+        color: black;
+        flex:7;
+    }
+    article p{
+        text-align: justify;
+    }
+    aside {
+        background-color: black;
+        flex:3;
+        text-align: center;
+        height: 650px;
+    }
+    h2 {
+        color: white;
+    }
+    
+    .drapeau_de_rio {
+        width: 80%;
+    }
+    aside p {
+        text-align: left;
+        color: white;
+        padding: 0.5em;
+    }
+    .lien_reseaux {
+        display: flex;
+        margin: auto;
+        width: 90%;
+    }
+    .lien_reseaux img {
+        width: 80%;
+    }
+    footer {
+        display: flex;
+        height: 15vw;
+    }
+    h3 {
+        color: Black;
+    }
+    .titre_photo h3,.partenaires h3{
+        margin-left:1em;
+    }
+    /* h3:not(.newsletter){
+        margin-left:1em;
+    } */
+    .newsletter {
+        flex:3;
+    }
+    input{
+        max-width:200px;
+    }
+    .titre_photo {
+        flex: 3;
+    }
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+    .partenaires {
+        flex: 3;
+    }
+    .partenaires img {
+        width: 100px;
+    }
+    /*menu buerger*/
+    #burger, #burger-content{
+        display:inline;
+    }
+    #burger_button{
+        display: none;
+        cursor:pointer;
+        background: none;
+        border:none;
+        font-size: 30px;
+        padding:0;
+        vertical-align: top;
+        line-height: 47px;
+        float: right;
+        margin-right: 32px;
+    }
+    #burger_overlay{
+        display: none;
+        position:fixed;
+        z-index: 2;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    #burger_sidebar{
+        display:none;
+        position:fixed;
+        width:84%;
+        z-index: 3;
+        height: 100%;
+        top:0;
+        left:0;
+        background-color: #FFF;
+        transform: translateX(-100%);
+        transition: transform 0.2s ease-out;
+    }
+    #burger_sidebar a{
+        display:block;
+    }
+    #burger_sidebar_header{
+        background: url(../photo/photo2burger.jpg) center;
+        background-size: cover;
+        height:128px;
+    }
+    #burger_sidebar_body{
+        padding:16px 8px;
+    }
+    #burger_sidebar_body a:before{
+        content:" ";
+        display: inline-block;
+        vertical-align: middle;
+        width:24px;
+        height:24px;
+        margin-right: 16px;
+        margin-bottom: 4px;
+    
+    }
+    #burger_sidebar_body a:first-child:before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body a:nth-child(2):before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body a:nth-child(3):before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body a:last-child:before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body .button{
+        float:none;
+        display: block;
+        text-align: center;
+        margin-top: 16px;
+        height:auto;
+        padding:10px;
+        line-height: inherit;    
+    }
+    @media screen and (max-width: 1024px){
+        #burger_content{
+            display: none;
+        }
+        #burger_button, #burger_sidebar,
+        .burger_activated #burger_overlay{
+            display: block;
+        }
+        .burger_activated #burger_sidebar{
+            transform:translateX(0);
+        }
+        header,nav,.section2,footer {
+            display: inline-block;
+        }
+        article{
+            padding:0;
+        }
+        .img_plage_lien {
+            display: block;
+        }
+        .lien_art {
+            padding-top: 0;
+            width: 100%;
+    
+        }
+        span {
+            padding:0;
+        }
+        h3 {
+            width: 100%;
+        }
+    }
+    /* @media screen and (max-width:375px) {
+        
+        header,nav,.section2,footer {
+            display: inline-block;
+        }
+        article{
+            padding:0;
+        } */
+        /* *[class] {
+            margin:0;
+         } */
+        /* }
+
+
+   
+
+    @media screen and (min-width: 376px) and (max-width: 1024px) {
+} */
