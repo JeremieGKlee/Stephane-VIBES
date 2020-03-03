@@ -1,0 +1,55 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+
+body{
+    width:100%;
+    background: #F2F2CB;
+    background: -moz-linear-gradient(-45deg, #F2F2CB 0%, #99A49F 50%, #445245 100%);
+    background: -webkit-linear-gradient(-45deg, #F2F2CB 0%, #99A49F 50%, #445245 100%);
+    background: linear-gradient(135deg, #F2F2CB 0%, #99A49F 50%, #445245 100%);
+    color:white ;
+    }
+#wrapper>*:not(header){
+    width:90%;
+    margin:auto;
+    background-color: black;
+}
+
+.courante:not(#section3){
+    padding:0 8em;
+}
+#section3{
+    background-color: crimson;
+}
+
+.flex{
+    display:flex;
+}
+.flex>*{
+    flex :1;
+}
+
+section:nth-child(even){
+    background-color: white;
+    color:black;
+}
+#section1{
+    height:30vw ;
+    background-image: url(../Photo/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#section5{
+    height:30vw ;
+    background-image: url(../Photo/julie-boulat-cd6-boulat-julie-b23d.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}

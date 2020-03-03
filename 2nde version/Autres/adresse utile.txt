@@ -1,0 +1,10 @@
+https://www.artstation.com/
+https://html-css-js.com/css/generator/box-shadow/
+https://www.w3schools.com/howto/howto_css_testimonials.asp   =======> testimonials balise spécifique
+https://websitesetup.org/html5-periodical-table/	==========> tableau periodique html5
+https://www.w3schools.com/howto/howto_js_accordion.asp  ======> pour accordeon en js
+https://www.w3schools.com/howto/howto_css_modals.asp =====> pour creer modal
+https://icones8.fr/icons====> pour trouver icon svg
+https://www.iconfinder.com/search/?q=avatar&from=homepage
+https://www.w3schools.com/howto/howto_css_contact_form.asp======> contact form
+https://caniuse.com/ site permettant de savoir la compatibilite d'un attribut en CSS en dessous de 98% ne pas utiliser
