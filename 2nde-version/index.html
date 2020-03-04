@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="Style/style.css">
     <title>VIBES</title>
 
@@ -40,7 +42,7 @@
             </div>  
         </header>
         <main>
-            <section id="section1" class ="courante">
+            <section id="section1" class ="courante backgimg sameDisplay">
                 <h3>HTML TEMPLATE FOR CREATIVE FOLKS AND DESIGN AGENCIES</h3>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and</br>
                         Consonantia, there live the blind texts.</p>
@@ -68,7 +70,7 @@
                                 <dd>Create Custom skins in Minutes</dd>
                         </dl>
                     </article>
-                    <article>
+                    <!-- <article> accordion façon w3school
                         <div id="accordion">
                             <button class="accordion">NULLA CONSEQUAT MASSA</button>
                             <div class="panel">
@@ -86,19 +88,36 @@
                                     fuga ducimus nihil possimus similique quam.</p>
                             </div>
                         </div>
+                    </article> accordion façon w3school-->
+                    <article id="accordion">
+                        <div class="accordion">
+                            <h4><span class="fas fa-minus text-rose"></span>NULLA CONSEQUAT MASSA</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis,
+                                eveniet enim? Sequi quaerat necessitatibus sapiente.</p>
+                        </div>
+                        <div class="accordion">             
+                            <h4><span class="fas fa-plus text-rose"></span>VIVAMUS ELEMENTUM SEMPER</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque 
+                                nostrum atque doloremque placeat facere itaque?</p>
+                        </div>
+                        <div class="accordion">    
+                            <h4><span class="fas fa-plus text-rose"></span>ETIAM ULTRICIES NISI VEL</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                fuga ducimus nihil possimus similique quam.</p>
+                        </div>
                     </article>
                 </div>   
             </section>
             <section id="section3" class ="courante">
                 <div id="portfolio" class ="flex">
-                    <!-- <figure><img src="Photo/erick-arciniega-attack-on-titan-color-final-high-res.jpg" alt="" srcset=""></figure>
+                    <figure><img src="Photo/erick-arciniega-attack-on-titan-color-final-high-res.jpg" alt="" srcset=""></figure>
                     <figure><img src="Photo/rafael-benedicto-mikasa-final-8-bit.jpg" alt="" srcset=""></figure>
                     <figure><img src="Photo/ranyert-guanipa-35143401-10155967490708813-2300971283644416000-n.jpg" alt="" srcset=""></figure>
                     <figure><img src="Photo/ranyert-guanipa-aot-det-1.jpg" alt="" srcset=""></figure>
                     <figure><img src="Photo/ranyert-guanipa-previo2.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/oscar-camacho-untitled-27.jpg" alt="" srcset=""></figure> -->
+                    <figure><img src="Photo/oscar-camacho-untitled-27.jpg" alt="" srcset=""></figure>
                     <figure><img src="Photo/rafael-benedicto-mikasa-final-rain-white.jpg" alt="" srcset=""></figure>
-                    <!-- <figure><img src="Photo/jin-hau-chen-0001.jpg" alt="" srcset=""></figure> -->
+                    <figure><img src="Photo/jin-hau-chen-0001.jpg" alt="" srcset=""></figure>
                 </div>
                 <div id="tri_lien" class ="flex">
                     <div id="tri" class ="flex">
@@ -112,29 +131,35 @@
             </section>
             <section id="section4" class ="courante">
                 <div class="client_lambda">
-                    <img src="Photo/myAvatarf.png" alt="Avatar" style="width:90px">
-                    <p><span>Jessie Ans.</span> Designer.</p>
-                    <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    <img src="Photo/avatarChrista.jpg" alt="Avatar" style="width:90px">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                          Voluptate amet doloremque adipisci porro iste. Voluptatibus
-                          similique magnam hic quia laboriosam?</q>
+                          similique magnam hic quia laboriosam?</p>
+                        <p><strong>Jessie Ans.</strong> Designer.</p>
+                    </blockquote>
                 </div>
                 <div class="client_lambda">
-                    <img src="Photo/myAvatarh.png" alt="Avatar" style="width:90px">
-                    <p><span>Harry Cover.</span> CEO at Company.</p>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <img src="Photo/avatarEren.jpg" alt="Avatar" style="width:90px">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Quasi voluptas quam inventore! Praesentium incidunt
-                         modi molestiae iste doloribus.</q>
+                         modi molestiae iste doloribus.</p>
+                        <p><strong>Harry Cover.</strong> CEO at Company.</p>
+                    </blockquote>
                 </div>
                 <div class="client_lambda">
-                    <img src="Photo/myAvatarf2.png" alt="Avatar" style="width:90px">
-                    <p><span>Elsa Dorsa.</span> Accountant.</p>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <img src="Photo/avatarMikasa.jpg" alt="Avatar" style="width:90px">
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Quasi voluptas Praesentium incidunt
-                         modi molestiae iste doloribus.</q>
+                         modi molestiae iste doloribus.</P>
+                        <p><strong>Elsa Dorsa.</strong> Accountant.</p> 
+                    </blockquote>
                 </div>
                 <a class="more" href="">BECOME OUR CLIENT</a>
             </section>
-            <section id="section5" class ="courante">
+            <section id="section5" class ="courante backgimg sameDisplay">
                 <div id="sectiondiv5">
                     <h3>NEW HORIZONS AWAIT</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -143,29 +168,25 @@
                     <a class="more" href="">BUY VIBES ON THEMEFOREST</a>
                 </div>  
             </section>
-            <section id="section6" class ="courante flex">
+            <section id="section6" class ="courante">
                 <h2>GET IN TOUCH</h2>
-                <div id="container_form">
-                    <div class="form">
-                        <form action="">    
+                    <form action="" class ="flex">
+                        <div class="form1">  
                             <label for="fname">YOUR NAME</label>
                             <input type="text" id="fname" name="firstname">
                             <label for="email">YOUR EMAIL</label>
                             <input type="email" id="email" name="email">
                             <label for="yourphone">YOUR PHONE</label>
                             <input type="tel"  id ="tel" name="Telephone">
-                        </form>
-                    </div>
-                    <div class="form">
-                        <form action="">
+                        </div>
+                        <div class="form2">
                             <label for="subject">SUBJECT</label>
                             <input type="text" id ="subject" name="subject">             
                             <label for="message">MESSAGE</label>
                             <textarea id="text" name="message" style="height:200px"></textarea>
                             <input type="submit" value="SEND">
-                        </form>
-                    </div>   
-                </div>
+                        </div>
+                    </form>  
             </section>
             <section id ="section7" class ="courante flex">
                     <article>
@@ -190,5 +211,6 @@
         </main>
             <footer class ="courante"><p>Buy this theme on ThemeForest.net</p></footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="Scripts/script.js"></script> 
 </body> 

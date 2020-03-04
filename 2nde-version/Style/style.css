@@ -1,0 +1,149 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+
+body{
+    width:100%;
+    background: #F2F2CB;
+    background: -moz-linear-gradient(-45deg, #F2F2CB 0%, #99A49F 50%, #445245 100%);
+    background: -webkit-linear-gradient(-45deg, #F2F2CB 0%, #99A49F 50%, #445245 100%);
+    background: linear-gradient(135deg, #F2F2CB 0%, #99A49F 50%, #445245 100%);
+    color:white ;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+#wrapper{
+    width:90%;
+    margin:auto;
+}
+#wrapper>*:not(header){
+    background-color: black;
+}
+header{
+    align-items: center;
+}
+h1{
+    display:none;
+}
+#logo{
+    height:70px;
+}
+#nav1{
+    display: flex;
+    justify-content: space-between;
+}
+#nav1 a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    
+ }
+#nav1 a:hover{
+   border-bottom: 1px solid red;
+}
+
+
+.courante:not(#section3){
+    padding:1em 8em;
+}
+.flex{
+    display:flex;
+}
+.flex>*{
+    flex :1;
+}
+section:nth-child(even){
+    background-color: white;
+    color:black;
+}
+.backgimg{
+    height:30vw ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.sameDisplay h3{
+    padding-top:3em;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+#section1{
+    background-image: url(../Photo/pixel-motron-lastsupper-animecrossover-by-pixelmotron.jpg);
+}
+#section2{
+    height:25vw ;
+}
+#accordion{
+    padding:1em;
+}
+.accordion{
+    border: 1px solid #aaa;
+    margin-bottom: 1em;
+    padding: 0 2em;
+}
+.accordion:not(:first-child) p{
+    display: none;
+}
+.accordion .fas{
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+}
+.accordion h4, .accordion p{
+    margin: 0.8rem 0;
+}
+
+
+#portfolio{
+    flex-wrap: wrap;
+    margin: 0;
+}
+#portfolio figure{
+    flex: 1 0 25%;
+    margin: 0;
+    height: 200px;
+    width: 25%;
+}
+#portfolio figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.client_lambda{
+    display: flex;
+    align-items: flex-start;
+    padding: 2em 0;
+    border-bottom: 1px solid #aaa; 
+}
+#section4.client_lambda:last-child{
+    border: none;
+}
+.client_lambda img{
+    height: 5em;
+    margin: 0 1em 0 0;
+}
+.client_lambda:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.client_lambda:nth-child(even) img{
+    margin: 0 0 0 1em;
+}
+
+blockquote{
+    margin: 0;
+}
+blockquote p{
+    font-style: oblique;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+
+#section5{
+    background-image: url(../Photo/j-espinosa-p-fan-art-titan-bestia-j-espinosap.jpg);
+    background-attachment: fixed;
+}

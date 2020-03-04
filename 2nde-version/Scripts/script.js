@@ -28,18 +28,28 @@
 // });
 /*script burger*/
 /*script accordion*/
-var acc = document.getElementsByClassName("accordion");
-var i;
+// var acc = document.getElementsByClassName("accordion");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+//     } 
+//   });
+// }
 /*script accordion*/
+$(".accordion h4").on("click", function(){
+           
+  if($(this).find("span").hasClass("fa-plus")){ 
+      $(".accordion h4").find("span.fa-minus").removeClass("fa-minus").addClass("fa-plus")
+      $(".accordion h4").siblings("p").slideUp(400)
+      $(this).find("span").addClass("fa-minus").removeClass("fa-plus")
+      $(this).siblings("p").slideDown(400)
+  }
+  
+})

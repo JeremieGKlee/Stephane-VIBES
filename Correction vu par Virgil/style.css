@@ -1,0 +1,171 @@
+:root{
+    --pink-color: #f635a4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #bbb;
+}
+
+p:not(#hero p, #buy-now p){
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.flex{
+    display: flex;
+}
+.flex>*{
+    flex: 1;
+}
+
+.button{
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    text-transform: uppercase;
+    border-color: white;
+    background-color: transparent;
+}
+.btn-rose{
+    background-color: var(--pink-color)
+}
+.border-rose{
+    border-color: var(--pink-color);
+}
+.text-rose{
+    color: var(--pink-color);
+}
+
+#wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+section:not(#gallery), #gallery-filters{
+    padding : 1em 8em;
+}
+main section{
+    background-color: white;
+}
+#hero, #buy-now, #footer-info{
+    background-color: black;
+    color: white;
+}
+
+#headmenu{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#headmenu a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0;
+    margin: 0 0.5em;
+}
+#headmenu a:hover{
+    border-bottom: 1px solid white;
+}
+#headmenu>*{
+    flex: initial;
+}
+#headmenu #logo{
+    height: 100px;
+}
+section#hero{
+    text-align: center;
+    padding: 4em 14em;
+}
+section#hero h1{
+    text-transform: uppercase;
+}
+
+#welcome article:first-child p:first-of-type{
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+#accordion{
+    padding:1em;
+}
+.accordion-element{
+    border: 1px solid #aaa;
+    margin-bottom: 1em;
+    padding: 0 2em;
+}
+.accordion-element:not(:first-child) p{
+    display: none;
+}
+.accordion-element .fas{
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+}
+.accordion-element h4, .accordion-element p{
+    margin: 0.8rem 0;
+}
+
+#testimonials>div{
+    display: flex;
+    align-items: flex-start;
+    padding: 2em 0;
+    border-bottom: 1px solid #aaa; 
+}
+#testimonials>div:last-child{
+    border: none;
+}
+#testimonials img{
+    height: 5em;
+    margin: 0 1em 0 0;
+}
+#testimonials>div:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+#testimonials>div:nth-child(even) img{
+    margin: 0 0 0 1em;
+}
+
+blockquote{
+    margin: 0;
+}
+blockquote p{
+    font-style: oblique;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+/*blockquote{
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+}
+blockquote>*:not(img){
+    padding-left: 6rem;
+}
+blockquote img{
+    float: left;
+    height: 5em;
+    padding-right: 1em;
+}
+blockquote:nth-child(even){
+    text-align: right;
+    
+}
+blockquote:nth-child(even)>*:not(img){
+    padding-right: 6rem;
+}
+blockquote:nth-child(even) img{
+    float: right;
+    padding-left: 1em;
+    padding-right: 0;
+}
+blockquote p{
+    font-style: oblique;
+    font-size: 1.5em;
+}*/
+

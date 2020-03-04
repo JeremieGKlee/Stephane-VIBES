@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" media="all" href="style.css">
+    <!--[if gt IE 6]>
+        <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <section id="headmenu" class="flex">
+                <a href="">
+                    <img id="logo" src="./img/logo.png" alt="">
+                </a>
+                <nav>
+                    <a href="">home</a>
+                    <a href="">about</a>
+                    <a href="">gallery</a>
+                    <a href="">testimonials</a>
+                    <a href="">contact</a>
+                    <a href="">pages</a>
+                </nav>
+            </section>
+            <section id="hero">
+                <h1>HTML template for creative folks and design agencies</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem coronavirus ullam officia esse perspiciatis dolorem repudiandae.</p>
+                <button class="button">read more</button>
+            </section>
+        </header>
+       
+        <main>
+            <section id="welcome" class="flex">
+                <article>
+                    <h2>Why choose us?</h2>
+                    <p><strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quisquam voluptatibus sequi saepe ipsam</strong></p>
+                    <p>
+                        Neque nisi maiores excepturi ad omnis, asperiores. Numquam quae autem et tempore fuga doloremque laudantium aspernatur?
+                    </p>
+                </article>
+                <article>
+                    <h2>What you get?</h2>
+                    
+                </article>
+                <article id="accordion">
+                    <div class="accordion-element">
+                        <h4><span class="fas fa-minus text-rose"></span>TITRE</h4>
+                        <p>texte qui s'affichera ou pas si je clique sur le petit symbole</p>
+                    </div>
+                    <div class="accordion-element">             
+                        <h4><span class="fas fa-plus text-rose"></span>TITRE</h4>
+                        <p>texte qui s'affichera ou pas si je clique sur le petit symbole</p>
+                    </div>
+                    <div class="accordion-element">    
+                        <h4><span class="fas fa-plus text-rose"></span>TITRE</h4>
+                        <p>texte qui s'affichera ou pas si je clique sur le petit symbole</p>
+                    </div>
+                </article>
+            </section>
+            <section id="gallery">
+                <div id="gallery-imgs" class="flex">
+
+                </div>
+                <div id="gallery-filters" class="flex"></div>
+            </section>
+            <section id="testimonials">
+                <div>
+                    <img src="./img/avatar.png">
+                    <blockquote>
+                        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                        <footer><strong>Aldous Huxley</strong>, Brave New World</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <img src="./img/avatar.png">
+                    <blockquote>
+                        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                        <footer><strong>Aldous Huxley</strong>, Brave New World</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <img src="./img/avatar.png">
+                    <blockquote>
+                        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced. Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                        <footer><strong>Aldous Huxley</strong>, Brave New World</footer>
+                    </blockquote>
+                </div>
+            
+            </section>
+            <section id="buy-now"></section>
+            <section id="contact">
+                <form action="" class="flex">
+                    <div>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section id="footer-info" class="flex"></section>
+            <section id="footer-nav" class="flex"></section>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(".accordion-element h4").on("click", function(){
+           
+            if($(this).find("span").hasClass("fa-plus")){ 
+                $(".accordion-element h4").find("span.fa-minus").removeClass("fa-minus").addClass("fa-plus")
+                $(".accordion-element h4").siblings("p").slideUp(400)
+                $(this).find("span").addClass("fa-minus").removeClass("fa-plus")
+                $(this).siblings("p").slideDown(400)
+            }
+            
+        })
+    </script>
+</body>
+</html>
