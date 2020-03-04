@@ -1,0 +1,2 @@
+input color pour tableau couleur
+time set out pour terminer fonction  temps imparti
