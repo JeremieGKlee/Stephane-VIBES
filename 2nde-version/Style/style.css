@@ -1,10 +1,9 @@
-    * {
-        box-sizing: border-box;
-    }
-    :root{
+* {
+   box-sizing: border-box;
+}
+:root{
         --color: #d14343;
-    }
-    
+}   
 body{
     width:100%;
     background: #F2F2CB;
@@ -14,18 +13,15 @@ body{
     color:white ;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    align-items: center;
 }
 #wrapper{
     width:90%;
     margin:auto;
 }
-#wrapper>*:not(header){
+/* #wrapper>*:not(header){
     background-color: black;
-}
-header{
-    align-items: center;
-    
-}
+} */
 h1{
     display:none;
 }
@@ -39,13 +35,29 @@ h1{
 #nav1 a{
     text-transform: uppercase;
     color: white;
-    text-decoration: none;
 }
 #nav1 a:hover{
    border-bottom: 1px solid var(--color);
 }
-.courante:not(#section3){
+/* .courante:not(#section3){
     padding:1em 8em;
+} */
+.courante{
+    padding:1em 8em;
+}
+a{
+    text-decoration: none;
+}
+.more{
+    border: solid 2px var(--color);
+    padding:0.5em 1em;
+    text-transform: uppercase;
+}
+.text_white{
+    color:white;
+}
+.text_color{
+    color:var(--color);
 }
 .flex{
     display:flex;
@@ -62,8 +74,7 @@ section:nth-child(even){
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    
+    text-align: center;  
 }
 .BackgDisplay h2{
     padding-top:3em;
@@ -71,13 +82,16 @@ section:nth-child(even){
     font-size: 2em;
     text-align: center;
 }
+.BackgDisplay p{
+    margin:1em;
+    line-height: 1.5em;
+}
 .sameDisplay h2{
     padding-top:0;
     line-height: 2em;
     font-size: 2em;
     text-align: center;
 }
-
 #section1{
     background-image: url(../Photo/pixel-motron-lastsupper-animecrossover-by-pixelmotron.jpg);
 }
@@ -137,67 +151,6 @@ dt {
     width: 100%;
     object-fit: cover;
 }
-
-.client_lambda{
-    display: flex;
-    align-items: flex-start;
-    padding: 2em 0;
-    border-bottom: 1px solid #aaa; 
-}
-.client_lambda:last-child{
-    border: none;
-}
-.client_lambda img{
-    height: 5em;
-    margin: 0 1em 0 0;
-}
-.client_lambda:nth-child(even){
-    flex-direction: row-reverse;
-    text-align: right;
-}
-.client_lambda:nth-child(even) img{
-    margin: 0 0 0 1em;
-}
-blockquote{
-    margin: 0;
-}
-blockquote p{
-    font-style: oblique;
-    font-size: 1.5em;
-    margin-top: 0;
-}
-#section5{
-    background-image: url(../Photo/j-espinosa-p-fan-art-titan-bestia-j-espinosap.jpg);
-    background-attachment: fixed;
-    
-}
-.color{
-    color:var(--color);
-}
-.trait_color{
-    width :100px;
-    height:4px;
-    margin:auto;
-    background-color: var(--color);
-    margin-top:-2em;  
-}
-#section6 h2{
-    text-align: center;
-}
-form{
-    width:100%;
-}
-.form{
-    display:flex;
-    flex-direction: column;
-}
-.fg{
-    width:30%;
-}
-.fd{
-    width:50%;
-}
-
 /*modal image*/
 .myImg{
     cursor: pointer;
@@ -219,16 +172,14 @@ form{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-  
+} 
   /* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-}
-  
+} 
   /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -239,8 +190,7 @@ form{
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-}
-  
+} 
   /* Add Animation */
 .modal-content, #caption {  
     -webkit-animation-name: zoom;
@@ -248,17 +198,14 @@ form{
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-  
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
-}
-  
+} 
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
-}
-  
+} 
   /* The Close Button */
 .close {
     position: absolute;
@@ -281,4 +228,113 @@ form{
     .modal-content {
       width: 100%;
 }
+}
+/*modal image*/
+
+#tri_lien{
+    display:flex;
+    justify-content: space-between;
+}
+#tri{
+    width:20%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#tri a{ 
+    color: black;
+    padding: 0.5em 0;
+
+}
+#tri a:hover{
+    color:var(--color);
+}
+
+.client_lambda{
+    display: flex;
+    align-items: flex-start;
+    padding: 2em 0;
+    border-bottom: 1px solid #aaa; 
+}
+.client_lambda:last-of-type{
+    border:none;
+}
+.client_lambda img{
+    height: 5em;
+    margin: 0 1em 0 0;
+}
+.client_lambda:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.client_lambda:nth-child(even) img{
+    margin: 0 0 0 1em;
+}
+blockquote{
+    margin: 0;
+}
+blockquote p{
+    font-style: oblique;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+#section4>p:last-of-type{
+    text-align: center;
+}
+/* #section4>p{
+    text-align: center;
+} ou alors cette ecriture vu que un seul p parent direct */
+#section5{
+    background-image: url(../Photo/j-espinosa-p-fan-art-titan-bestia-j-espinosap.jpg);
+    background-attachment: fixed;
+}
+.color{
+    color:var(--color);
+}
+.trait_color{
+    width :100px;
+    height:4px;
+    margin:auto;
+    background-color: var(--color);
+    margin-top:-2em;
+    margin-bottom: 2em; 
+}
+form{
+    width:100%;
+    align-content: space-around;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+}
+input, textarea{
+    width:95%;
+    background-color: rgb(206, 206, 206);
+    margin-bottom: 2em;
+}
+input, button{
+    height:2em;
+    cursor: pointer;
+}
+textarea{
+    height:7.5em;
+    cursor: pointer;
+}
+label{
+    margin-bottom: 0.5em;
+}
+button{
+    width:100px;
+    color:white;
+    background-color: var(--color);
+}
+#section7{
+    background-color: black;
+}
+.trait_colorSec7{
+    width :50px;
+    height:4px;
+    background-color: var(--color);
+    margin-bottom: 2em; 
 }
