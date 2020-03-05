@@ -101,3 +101,24 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+// document.getElementById("hidden").onmouseover = function() {mouseOver()};
+// document.getElementById("hidden").onmouseout = function() {mouseOut()};
+
+// function mouseOver() {
+//   document.getElementById("hidden").show;
+// }
+
+// function mouseOut() {
+//   document.getElementById("hidden").hide;
+// }
+//Evènement "mouseover" sur l'élément 1
+Event.observe( $('.myFig_Img'), 'mousover', function (e) {
+  //Affichage de l'élément 2
+  $('.hidden').style.display = '';
+});
+//Evènement "mouseout" sur l'élément 1
+Event.observe( $('.myFig_Img'), 'mouseout', function (e) {
+  //Masquage de l'élément 2
+  $('.hidden').style.display = 'none';
+});
