@@ -119,14 +119,19 @@
             </section>
             <section id="section3" class ="courante">
                 <div id="portfolio" class ="flex">
-                    <figure><img src="Photo/erick-arciniega-attack-on-titan-color-final-high-res.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/rafael-benedicto-mikasa-final-8-bit.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/ranyert-guanipa-35143401-10155967490708813-2300971283644416000-n.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/ranyert-guanipa-aot-det-1.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/ranyert-guanipa-previo2.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/oscar-camacho-untitled-27.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/rafael-benedicto-mikasa-final-rain-white.jpg" alt="" srcset=""></figure>
-                    <figure><img src="Photo/jin-hau-chen-0001.jpg" alt="" srcset=""></figure>
+                    <figure><img class ="myImg" src="Photo/erick-arciniega-attack-on-titan-color-final-high-res.jpg" alt="erick-arciniega" style="width:100%;max-width:500px"></figure>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <figure><img class="imgModal" src="Photo/rafael-benedicto-mikasa-final-8-bit.jpg" alt="rafael-benedicto" srcset=""></figure>
+                    <figure><img class="imgModal" src="Photo/ranyert-guanipa-35143401-10155967490708813-2300971283644416000-n.jpg" alt="ranyert-guanipa" srcset=""></figure>
+                    <figure><img class="imgModal" src="Photo/ranyert-guanipa-aot-det-1.jpg" alt="ranyert-guanipa" srcset=""></figure>
+                    <figure><img class="imgModal" src="Photo/ranyert-guanipa-previo2.jpg" alt="ranyert-guanipa" srcset=""></figure>
+                    <figure><img class="imgModal" src="Photo/oscar-camacho-untitled-27.jpg" alt="oscar-camacho" srcset=""></figure>
+                    <figure><img class="imgModal" src="Photo/rafael-benedicto-mikasa-final-rain-white.jpg" alt="rafael-benedicto" srcset=""></figure>
+                    <figure><img class="imgModal" src="Photo/jin-hau-chen-0001.jpg" alt="jin-hau-chen" srcset=""></figure>
                 </div>
                 <div id="tri_lien" class ="flex">
                     <div id="tri" class ="flex">
@@ -184,20 +189,20 @@
                 <h2>GET IN TOUCH</h2>
                 <div class="trait_color"></div>
                     <form action="" class ="flex">
-                        <div class="form1">  
-                            <label for="fname">YOUR NAME</label>
-                            <input type="text" id="fname" name="firstname">
-                            <label for="email">YOUR EMAIL</label>
-                            <input type="email" id="email" name="email">
-                            <label for="yourphone">YOUR PHONE</label>
-                            <input type="tel"  id ="tel" name="Telephone">
+                        <div class="form fg">  
+                            <label for="fname"><b>YOUR NAME</b></label>
+                            <input type="text" placeholder="Enter  your Name" id="fname" name="firstname" required>
+                            <label for="email"><b>YOUR EMAIL</b></label>
+                            <input type="email" placeholder="Enter your Email" id="email" name="email" required>
+                            <label for="yourphone"><b>YOUR PHONE</b></label>
+                            <input type="tel" placeholder="Enter your Phone" id ="tel" name="Telephone" required>
                         </div>
-                        <div class="form2">
-                            <label for="subject">SUBJECT</label>
-                            <input type="text" id ="subject" name="subject">             
-                            <label for="message">MESSAGE</label>
-                            <textarea id="text" name="message" style="height:200px"></textarea>
-                            <input type="submit" value="SEND">
+                        <div class="form fd">
+                            <label for="subject"><b>SUBJECT</b></label>
+                            <input type="text" placeholder="Enter your Subject" id ="subject" name="subject" required>             
+                            <label for="message"><b>MESSAGE</b></label>
+                            <textarea id="text" placeholder="Enter your Message" name="message" style="height:200px" required></textarea>
+                            <button><b>SEND</b></button>
                         </div>
                     </form>  
             </section>
@@ -219,12 +224,27 @@
                     </article>
                     <article>
                         <h3>TWITTER FEED</h3>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square"></i>
+                        <i class="fas fa-square fa-spin"></i>
+                        
+                            <!-- <div class="fa-3x"> pour dimension du fa
+                                plusieurs effets
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <i class="fas fa-circle-notch fa-spin"></i>
+                                <i class="fas fa-sync fa-spin"></i>
+                                <i class="fas fa-cog fa-spin"></i>
+                                <i class="fas fa-spinner fa-pulse"></i>
+                                <i class="fas fa-stroopwafel fa-spin"></i>
+                              </div> -->                        
                     </article>
             </section>
         </main>
             <footer class ="courante"><p>Buy this theme on ThemeForest.net</p></footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="Scripts/script.js"></script> 
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
