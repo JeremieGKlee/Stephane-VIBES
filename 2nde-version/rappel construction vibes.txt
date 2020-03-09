@@ -1,2 +1,5 @@
 input color pour tableau couleur
 time set out pour terminer fonction  temps imparti
+<i class="fas fa-music"</i>
+<i class="fas fa-film"></i>
+<i class="far fa-image"></i>

@@ -88,6 +88,7 @@ section:nth-child(even){
 }
 .BackgDisplay p{
     margin:1em;
+    margin-bottom: 2em;
     line-height: 1.5em;
 }
 .sameDisplay h2{
@@ -155,15 +156,15 @@ dt {
     width: 100%;
     object-fit: cover;
 }
-/*modal image*/
+/* Debut modal image*/
 /* Sepia */
 .myFig_Img{
 	-webkit-filter: sepia(80%);
     filter: sepia(80%);
     -webkit-transform: scale(1);
 	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .6s ease-in-out;
+	transition: .6s ease-in-out;
 }
 .myFig_Img:hover{
     z-index: 1;
@@ -173,14 +174,20 @@ dt {
     transform: scale(1.2);
     /* margin-left: -20px; */
 }
+.myFig_Img:hover .hidden{
+    display: block;
+}
 .hidden{
+    display: none;
+    color:var(--color);
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    opacity: 0.5;
-    display:none;
+    opacity: 0.8;
+    
 }
+
 
 /* .myImg{
     cursor: pointer;
@@ -260,8 +267,10 @@ dt {
       width: 100%;
 }
 }
-/*modal image*/
+/*Fin modal image*/
 
+
+/*Début Tri Portfolio*/
 #tri_lien{
     display:flex;
     justify-content: space-between;
@@ -275,12 +284,15 @@ dt {
 #tri a{ 
     color: black;
     padding: 0.5em 0;
+    cursor:pointer;
 
 }
 #tri a:hover{
     color:var(--color);
 }
+/*Fin Tri Portfolio*/
 
+/*Début TESTIMONIALS*/
 .client_lambda{
     display: flex;
     align-items: flex-start;
@@ -316,6 +328,8 @@ blockquote p{
 /* #section4>p{
     text-align: center;
 } ou alors cette ecriture vu que un seul p parent direct */
+/*Fin TESTIMONIALS*/
+
 #section5{
     background-image: url(../Photo/j-espinosa-p-fan-art-titan-bestia-j-espinosap.jpg);
     background-attachment: fixed;
@@ -331,6 +345,8 @@ blockquote p{
     margin-top:-2em;
     margin-bottom: 2em; 
 }
+
+/*Début Contact Form*/
 form{
     width:100%;
     align-content: space-around;
@@ -355,6 +371,7 @@ textarea{
 label{
     margin-bottom: 0.5em;
 }
+/*Fin Contact Form*/
 button{
     width:100px;
     border-color: var(--color);
