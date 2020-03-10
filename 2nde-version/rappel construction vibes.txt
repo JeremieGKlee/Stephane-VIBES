@@ -1,5 +1,9 @@
 input color pour tableau couleur
 time set out pour terminer fonction  temps imparti
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_portfolio_gallery_filter     pour faire  portfolio et ri
 <i class="fas fa-music"</i>
 <i class="fas fa-film"></i>
 <i class="far fa-image"></i>
+
+https://www.w3schools.com/howto/howto_js_portfolio_filter.asp       pour filtrer image sur portfolio
+https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/color      pour input color
