@@ -103,10 +103,48 @@ span.onclick = function() {
 $("#goutte").on("click",function(){
   $("#drop_color").click()
 })
-// colorPicker.addEventListener("input", updateFirst, false);
-colorPicker.addEventListener("change", watchColorPicker, false);
-function watchColorPicker(event) {
-  document.getElementsByClassName(".color").forEach(function(color) {
-    style.color = event.target.value;
-  });
+
+
+$("#drop_color").on("change",changeDeCouleur);
+
+function changeDeCouleur(){
+  let nouvelle_couleur = $("#drop_color").val();   //
+  let skip_colors = document.getElementsByClassName("color");
+  for(let i=0; i<skip_colors.length;i++){
+  skip_colors[i].style.color = nouvelle_couleur;
+  }
+
+   let skip_back_colors = document.getElementsByClassName("backg_color");
+   for(let i=0; i<skip_back_colors.length;i++){
+    skip_back_colors[i].style.background = nouvelle_couleur;
+   }
+   
+   let skip_border_colors = document.getElementsByClassName("bor_col");
+   for(let i=0; i<skip_back_colors.length;i++){
+    skip_border_colors[i].style.borderBottomColor = nouvelle_couleur;
+   }
+}
+document.addEventListener("DOMContentLoaded",function(event){  /* lorsque le DOM est chargé, on execute une fonction*/
+  let triahover = document.getElementById("tri").childNodes; /* je declare une variable let = qui cible les enfants d'un id particulier*/
+  for(let i=0;i<triahover.length;i++){          // boucle sur chacun des enfants
+    triahover[i].onmouseover=function(){          //quand je mets mon curseur dessus    
+      let nouvelle_couleur = $("#drop_color").val();    // je prends la valeur de mon input color
+      this.style.color = nouvelle_couleur;      // a celui là je lui donne la couleur de l'input
+    }
+    triahover[i].onmouseleave=function(){     // qd mon curseur sors de l'element, j'appelle une fonction anonyme qui redonne a l"element quitté la couleur d'origine
+      this.style.color = "#000";
+    }
+  }
+})
+function filterSelection(tri){
+  let les_imgs = document.getElementById("portfolio").querySelectorAll("figure");
+    for (let i=0; i<les_imgs.length;i++){
+      if(!les_imgs[i].classList.contains(tri.toLowerCase())){
+        les_imgs[i].style.display="none";
+      }
+      else{
+        les_imgs[i].style.display="block";
+      }
+    }
+      
 }

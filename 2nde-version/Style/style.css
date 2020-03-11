@@ -30,6 +30,9 @@ body{
 .drop{
 
 }
+.bor_col{
+border-color: var(--color);
+}
 /* menu burger*/
 /* #burger, #burger-content{
     display:inline;
@@ -166,15 +169,15 @@ a{
     text-decoration: none;
 }
 .more{
-    border: solid 2px var(--color);
+    border: solid 2px;
     padding:0.5em 1em;
 }
 .text_white{
     color:white;
 }
-.text_color{
+/* .text_color{
     color:var(--color);
-}
+} */
 .flex{
     display:flex;
 }
@@ -291,7 +294,6 @@ dt {
 }
 .hidden{
     display: none;
-    color:var(--color);
     top: 50%;
     left: 50%;
     position: absolute;
@@ -452,11 +454,13 @@ blockquote p{
 .color{
     color:var(--color);
 }
+.backg_color{
+    background-color: var(--color);
+}
 .trait_color{
     width :100px;
     height:4px;
     margin:auto;
-    background-color: var(--color);
     margin-top:-2em;
     margin-bottom: 2em; 
 }
@@ -489,12 +493,10 @@ label{
 /*Fin Contact Form*/
 button{
     width:100px;
-    border-color: var(--color);
     color:white;
     
 }
 .butt1{
-    background-color: var(--color);
 }
 .butt2{
     background-color: black;
@@ -505,6 +507,5 @@ button{
 .trait_colorSec7{
     width :50px;
     height:4px;
-    background-color: var(--color);
     margin-bottom: 2em; 
 }
