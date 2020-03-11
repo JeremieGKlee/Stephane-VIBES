@@ -16,7 +16,7 @@
 // button.addEventListener("keydown", function(e) {
 //    if (this.parentNode.classList.contains(activatedClass)){
 
-//    if (e.repeat === false && e.which === 27)   Pour eviter erreur sur appui long touche et 27 correspond aà la touche echapp
+//    if (e.repeat === false && e.which === 27)  /* Pour eviter erreur sur appui long touche et 27 correspond aà la touche echapp*/
 //        this.parentNode.classList.remove(activatedClass);
 //    }
 // });
@@ -78,9 +78,8 @@ $(".accordion h4").on("click", function(){
 // Get the modal
 // Modal origin C3SCHOOL
 
-
+//  Début Modal
 var modal = document.getElementById("myModal");
-
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var imgs = document.getElementsByClassName("myImg");
 var modalImg = document.getElementById("img01");
@@ -93,21 +92,21 @@ function onclick_img_alone(){
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
-// colorPicker.addEventListener("input", updateFirst, false);
-// colorPicker.addEventListener("change", watchColorPicker, false);
+//  Fin Modal
+
 $("#goutte").on("click",function(){
   $("#drop_color").click()
 })
+// colorPicker.addEventListener("input", updateFirst, false);
+colorPicker.addEventListener("change", watchColorPicker, false);
 function watchColorPicker(event) {
-  document.querySelectorAll("p").forEach(function(p) {
-    p.style.color = event.target.value;
+  document.getElementsByClassName(".color").forEach(function(color) {
+    style.color = event.target.value;
   });
 }
