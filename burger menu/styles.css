@@ -1,0 +1,176 @@
+/* style de base */
+
+body {
+  
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  background: #CEBD21;
+background: -moz-linear-gradient(left, #CEBD21 0%, #A45423 50%, #C57112 100%);
+background: -webkit-linear-gradient(left, #CEBD21 0%, #A45423 50%, #C57112 100%);
+background: linear-gradient(to right, #CEBD21 0%, #A45423 50%, #C57112 100%);
+  background-size: cover;
+}
+
+header {
+  background: rgb(238, 27, 27);
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  top: 10em;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  position: relative;
+}
+
+.menu {
+  float: right;
+}
+
+.show-menu {
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+/* navigation */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(238, 27, 27);
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropdown-btn {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 18px 22px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropdown-btn {
+  background-color: #fefefe;
+  color: #218380;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #77AAAD;
+}
+
+
+
+
+
+
+
+
+
+/*  le burger avec l'effet de croix*/
+
+#burger-container {
+  position: relative;
+  display: none;
+  margin-top: 10px;
+  float: right;
+}
+
+#burger {
+  cursor: pointer;
+  display: block;
+}
+
+#burger span {
+  background: #fff;
+  display: block;
+  height: 5px;
+  width: 50px;
+  margin-bottom: 3px;
+  position: relative;
+  transition: all ease-in-out 0.4s;
+}
+
+
+/* open class - basculement grâce à Jquery*/
+
+#burger-container.open span:nth-child(2),
+#burger-container.open span:nth-child(3) {
+  width: 0;
+  /* collapse 2nd and 3rd span*/
+  opacity: 0;
+}
+
+
+/*makes the 1st and 4th span cross over each other*/
+
+#burger-container.open span:nth-child(4) {
+  transform: rotate(45deg);
+  top: -10px;
+}
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 15px;
+}
+
+
+/* media queries pour le responsive */
+
+@media only screen and (max-width: 375px) {
+  /* affiche la navigation burger   */
+  #burger-container {
+    display: block;
+    margin: 20px;
+  }
+  /* ouvrir et fermer le basculement  */
+  nav ul {
+    height: 0;
+  }
+  .show {
+    height: 13em;
+  }
+  /*  déplace le contenu vers le bas de l'écran pour laisser place à la navigation */
+  .move {
+    position: relative;
+    top: 22em;
+  }
+  /*  éléments de navigations  */
+  nav ul,
+  nav:active ul {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  

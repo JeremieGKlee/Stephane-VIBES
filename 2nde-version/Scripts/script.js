@@ -101,9 +101,11 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
-colorPicker.addEventListener("input", updateFirst, false);
-colorPicker.addEventListener("change", watchColorPicker, false);
-
+// colorPicker.addEventListener("input", updateFirst, false);
+// colorPicker.addEventListener("change", watchColorPicker, false);
+$("#goutte").on("click",function(){
+  $("#drop_color").click()
+})
 function watchColorPicker(event) {
   document.querySelectorAll("p").forEach(function(p) {
     p.style.color = event.target.value;

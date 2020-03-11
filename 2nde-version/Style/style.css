@@ -18,11 +18,10 @@ body{
 #goutte{
     position:fixed;
     top:200px;
-    width:50px;
-    height:50px;
     cursor: pointer;
 }
-.drop_color{
+#drop_color{
+    display:none;
     height:50px;
     width:50px;
     border: none;
@@ -64,7 +63,7 @@ h1{
 
 
 .courante{
-    padding:1em 8em;
+    padding:1em 12em;
 }
 a{
     text-decoration: none;
@@ -308,7 +307,10 @@ dt {
 }
 /*Fin Tri Portfolio*/
 
-/*Début TESTIMONIALS*/
+/*Début Section 4 TESTIMONIALS*/
+#section4{
+    height:45vw;
+}
 .client_lambda{
     display: flex;
     align-items: flex-start;
