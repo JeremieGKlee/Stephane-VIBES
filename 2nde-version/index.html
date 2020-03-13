@@ -19,31 +19,33 @@
         <i class="fas fa-tint fa-2x color drop"></i>
     </div>
     <div id="wrapper">
-        <header class ="courante flex">
-            <h1>VIBES</h1>
-            <a href="#" class="retour">
-                <img src="Photo/Vibes.png" alt="Logo" id="logo"></img>
-            </a>
-            <div id="burger">
-                <div id="burger_content">
-                    <nav>
-                        <div id="nav1">
-                            <a href="#" class="bold">HOME</a>
-                            <a href="#" class="bold">ABOUT</a>
-                            <a href="#" class="bold">PORTFOLIO</a>
-                            <a href="#" class="bold">TESTIMONIALS</a>
-                            <a href="#" class="bold">CONTACT</a>
-                            <a href="#" class="bold">PAGES</a>
-                        </div>
-                    </nav>
+        <header class ="courante">
+            <div id="sticky" class ="flex">
+                <h1>VIBES</h1>
+                <a href="#" class="retour">
+                    <img src="Photo/Vibes.png" alt="Logo" id="logo"></img>
+                </a>
+                <div id="burger">
+                    <div id="burger_content">
+                        <nav>
+                            <div id="nav1">
+                                <a href="#section1" class="bold bor_bot_col">HOME</a>
+                                <a href="#section2" class="bold bor_bot_col">ABOUT</a>
+                                <a href="#section3" class="bold bor_bot_col">PORTFOLIO</a>
+                                <a href="#section4" class="bold bor_bot_col">TESTIMONIALS</a>
+                                <a href="#section6" class="bold bor_bot_col">CONTACT</a>
+                                <a href="#section7" class="bold bor_bot_col">PAGES</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <button id="burger_button" class="bor_col">&#9776;</button>
+                    <div id="burger_sidebar">
+                        <div id="burger_sidebar_header"></div>
+                        <div id="burger_sidebar_body"></div>
+                    </div>
+                    <div id="burger_overlay"></div>
                 </div>
-                <button id="burger_button" class="bor_col">&#9776;</button>
-                <div id="burger_sidebar">
-                    <div id="burger_sidebar_header"></div>
-                    <div id="burger_sidebar_body"></div>
-                </div>
-                <div id="burger_overlay"></div>
-            </div>  
+            </div> 
         </header>
         <main>
             <section id="section1" class ="courante backgimg BackgDisplay">
@@ -58,7 +60,7 @@
                         <h3>Why Choose US?</h3>
                         <P><span class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dicta accusantium nam.</span></P>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime laboriosam animi
-                                ullam consectetur minus officia ipsa doloremque expedita? Quaerat.</p>     
+                                ullam consectetur minus officia ipsa doloremque expedita? <a href="https://themeforest.net/" class="color">Quaerat</a>.</p>     
                     </article>
                     <article>
                         <h3>What You Get?</h3>
@@ -214,7 +216,7 @@
                         <div class="trait_colorSec7 backg_color"></div>
                         <p>VIBES is an ideal theme for creative folks or design agencies.
                             <span>Ease of use and top-notch web design techniques</span> are wrapped with several gorgeous color schemes.</p>
-                        <p>You can buy this responsive WordPress theme on <span>ThemeForest</span>.</p>
+                        <p>You can buy this responsive WordPress theme on <a href="https://themeforest.net/" class="color">ThemeForest</a>.</p>
                     </article>
                     <article>
                         <h3>NEWSLETTERS</h3>
@@ -246,7 +248,16 @@
                     </article>
             </section>
         </main>
-        <footer class ="courante"><p>Buy this theme on ThemeForest.net</p></footer>
+        <footer class ="courante flex">
+            <p>Buy this theme on <a href="https://themeforest.net/" class="color">ThemeForest.net</a>.</p>
+            <nav>
+                <div id="nav2">
+                    <a href="#section1" class="bor_bot_col">Home</a>
+                    <a href="#" class="bor_bot_col">Elements</a>
+                    <a href="#" class="bor_bot_col">Documentation</a>
+                </div>
+            </nav>        
+        </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="Scripts/script.js"></script>
