@@ -55,7 +55,7 @@ section:nth-child(even){
     color:black;
 }
 .backgimg{
-    height:40vw ;
+    height:25vw ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,18 +118,22 @@ button{
 /* DEBUT Header*/
 header{
     height:100px;
+    position:fixed;
+    z-index: 2;
+    width: 90%;
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
 }
 /* #sticky{
-    width: 100%;
     position:fixed;
     height:100px;
     z-index: 2;
 } */
 .retour{
-    flex:3;
+    flex:1;
 }
 #burger{
-    flex:7;
+    flex:3;
 }
 h1{
     display:none;
@@ -140,7 +144,6 @@ h1{
 #nav1, #nav2{
     margin-top: 18px;
     display:flex;
-    /* flex-direction: column; */
     justify-content: space-between;
 }
 #nav1 a, #nav2 a{
@@ -240,7 +243,10 @@ h1{
 
 /* FIN menu burger*/
 /* FIN Header*/
-
+#section0{
+    position:relative;
+    height:100px;
+}
 /* DEBUT section 1*/
 #section1{
     background-image: url(../Photo/pixel-motron-lastsupper-animecrossover-by-pixelmotron.jpg);
@@ -600,5 +606,8 @@ label{
     }
     .courante{
         padding:1em 1em;
+    }
+    .backgimg{
+        height:400px ;
     }
 }
