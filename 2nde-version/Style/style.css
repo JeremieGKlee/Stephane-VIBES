@@ -23,7 +23,13 @@ body{
     background-color: black;
 } */
 /* DEBUT Généralités  */
-
+section{
+    position: relative;
+}
+.ancre{
+    position:absolute;
+    top:-100px;
+}
 .bor_col{
     border-color: var(--color);
 }
@@ -119,16 +125,10 @@ button{
 header{
     height:100px;
     position:fixed;
-    z-index: 2;
+    z-index: 1;
     width: 90%;
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
+    transition: background-color 500ms linear;
 }
-/* #sticky{
-    position:fixed;
-    height:100px;
-    z-index: 2;
-} */
 .retour{
     flex:1;
 }
@@ -399,6 +399,7 @@ dt {
 } 
   /* The Close Button */
 .close {
+    z-index: 3;
     position: absolute;
     top: 15px;
     right: 35px;

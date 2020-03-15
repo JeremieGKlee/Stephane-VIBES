@@ -162,13 +162,16 @@ function filterSelection(tri){ //cette function permet de selectionner sur filte
       }
     }  
 }
-/*Début Filtre Portfolio*/
+/*FIN Filtre Portfolio*/
 
-
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+/*DEBUT NAV SCROLL*/
+$(document).ready(function(){
+  $(window).scroll(function() { // check if scroll event happened
+    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+      $(".navbar-fixed-top").css("background-color", "#99A49F"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+    } else {
+      $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+    }
   });
 });
-//https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+/*FIN NAV SCROLL*/
